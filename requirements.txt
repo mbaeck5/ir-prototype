@@ -1,2 +1,62 @@
-streamlit
-openai
+altair==5.5.0
+annotated-types @ file:///home/conda/feedstock_root/build_artifacts/annotated-types_1733247046149/work
+anyio @ file:///home/conda/feedstock_root/build_artifacts/anyio_1736174388474/work
+attrs==25.1.0
+blinker==1.9.0
+cachetools==5.5.1
+certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1734380492396/work/certifi
+charset-normalizer==3.4.1
+click==8.1.8
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1733218098505/work
+dataclasses @ file:///home/conda/feedstock_root/build_artifacts/dataclasses_1628958434797/work
+distro @ file:///home/conda/feedstock_root/build_artifacts/distro_1734729835256/work
+exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1733208806608/work
+gitdb==4.0.12
+GitPython==3.1.44
+h11 @ file:///home/conda/feedstock_root/build_artifacts/h11_1733327467879/work
+h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1738578511449/work
+hpack @ file:///home/conda/feedstock_root/build_artifacts/hpack_1737618293087/work
+httpcore @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_httpcore_1731707562/work
+httpx @ file:///home/conda/feedstock_root/build_artifacts/httpx_1733663348460/work
+hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1737618333194/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1733211830134/work
+Jinja2==3.1.5
+jiter @ file:///Users/runner/miniforge3/conda-bld/jiter_1734065524169/work
+jsonschema==4.23.0
+jsonschema-specifications==2024.10.1
+lxml==5.3.0
+markdown-it-py==3.0.0
+MarkupSafe==3.0.2
+mdurl==0.1.2
+narwhals==1.25.2
+numpy==2.2.2
+openai @ file:///home/conda/feedstock_root/build_artifacts/openai_1738369985585/work
+packaging==24.2
+pandas==2.2.3
+pillow==11.1.0
+protobuf==5.29.3
+pyarrow==19.0.0
+pydantic @ file:///home/conda/feedstock_root/build_artifacts/pydantic_1737761369378/work
+pydantic_core @ file:///Users/runner/miniforge3/conda-bld/pydantic-core_1734571450346/work
+pydeck==0.9.1
+Pygments==2.19.1
+PyPDF2 @ file:///home/conda/feedstock_root/build_artifacts/pypdf2_1735229443413/work
+python-dateutil==2.9.0.post0
+python-docx==1.1.2
+pytz==2025.1
+referencing==0.36.2
+requests==2.32.3
+restricted-pkg==1.1.2
+rich==13.9.4
+rpds-py==0.22.3
+six==1.17.0
+smmap==5.0.2
+sniffio @ file:///home/conda/feedstock_root/build_artifacts/sniffio_1733244044561/work
+streamlit==1.42.0
+tenacity==9.0.0
+toml==0.10.2
+tornado==6.4.2
+tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1735661334605/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1733188668063/work
+tzdata==2025.1
+urllib3==2.3.0
