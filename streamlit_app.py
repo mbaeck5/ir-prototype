@@ -10,7 +10,7 @@ import httpx
 import ssl
 import os
 
-API_KEY = os.environ("OPENAI_KEY")
+API_KEY = os.getenv("OPENAI_KEY")
 
 # Initialize page config and styling
 st.set_page_config(page_title="Earnings Call Template Generator", layout="wide")
