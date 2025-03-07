@@ -1,11 +1,12 @@
 import streamlit as st
-
 from utils.openai_client import init_open_ai_client
-from views import document_upload, earnings_script, qa_input, market_updates, shareholders, investor_outreach, investor_targeting
+from views import document_upload, earnings_script, qa_input, market_updates, shareholders
+from views import investor_outreach, investor_targeting, analyst_coverage, ir_communications, ir_crm
 
 # Initialize page config and styling
-st.set_page_config(page_title="Earnings Call Template Generator", layout="wide")
+st.set_page_config(page_title="IR Content Creation Hub", layout="wide")
 
+# Initialize session state variables
 if 'answers' not in st.session_state:
     st.session_state.answers = {}
 if 'transcript' not in st.session_state:
@@ -47,6 +48,21 @@ if 'fiscal_year' not in st.session_state:
     st.session_state.fiscal_year = "2025"
 if 'openai_client' not in st.session_state:
     st.session_state.openai_client = init_open_ai_client()
+# Initialize session states for analyst coverage
+if 'analyst_coverage_data' not in st.session_state:
+    st.session_state.analyst_coverage_data = []
+if 'rating_history' not in st.session_state:
+    st.session_state.rating_history = []
+# Initialize session states for IR Communications
+if 'ir_emails' not in st.session_state:
+    st.session_state.ir_emails = []
+if 'ir_email_stats' not in st.session_state:
+    st.session_state.ir_email_stats = {}
+if 'ir_chatbot_conversations' not in st.session_state:
+    st.session_state.ir_chatbot_conversations = []
+# Initialize session state for IR CRM
+if 'ir_meetings' not in st.session_state:
+    st.session_state.ir_meetings = {}
 
 
 # Add PEAK6 styling
@@ -95,6 +111,9 @@ pg = st.navigation([
     st.Page(investor_outreach.run, title="Investor Outreach", icon=":material/cell_tower:", url_path="5"),
     st.Page(investor_targeting.run, title="Investor Targeting", icon=":material/track_changes:", url_path="6"),
     st.Page(market_updates.run, title="Market Updates", icon=":material/sync_alt:", url_path="7"),
-], expanded=True)
+    st.Page(analyst_coverage.run, title="Analyst Coverage", icon=":material/analytics:", url_path="8"),
+    st.Page(ir_communications.run, title="IR Communications", icon=":material/email:", url_path="9"),
+    st.Page(ir_crm.run, title="IR CRM", icon=":material/account_box:", url_path="10"),
+])
 
 pg.run()
